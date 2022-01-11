@@ -1,6 +1,7 @@
 export default function Comment(comment) {
-    // console.log(comment);
+  //   console.log(comment);
     const hasNestedComments = comment.comments.length > 0;
+  
     return `
       <div class="nested-comments-${comment.level}">
         <p class="comment-header">
@@ -10,7 +11,7 @@ export default function Comment(comment) {
         ${hasNestedComments ? comment.comments.map(comment => Comment(comment)).join("") : ""}
       </div>
     `  
-}
+  }
 
 
 // https://scrimba.com/learn/javascript/hacker-news-formatting-comments-cv83d4sr

@@ -18,10 +18,11 @@ function setActiveLink() {
 }
 
 class App {
-    constructor() {
-        new RouterHandler();  
-    }  
-  } 
+  constructor() {
+    new RouterHandler();
+  }  
+}
+
 new App();
 
 // Applying underline
